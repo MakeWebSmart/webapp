@@ -9,16 +9,6 @@ use app\assets\MyAsset;
 //use app\widgets\Alert;
 //use yii\bootstrap\Collapse; 
 
-$cmenuItems = [
-    ['label'=>'Home', 'url'=>['/site/index']],
-    ['label'=>'Services', 'url'=>['/site/services']],
-    ['label'=>'Study', 'url'=>['/site/study']],
-    ['label'=>'Institutions', 'url'=>['/site/institutions']],
-    '<li class="divider"></li>',
-    ['label'=>'About us', 'url'=>['/site/about']],
-    ['label'=>'Contact us', 'url'=>['/site/contact']],
-];
-
 AdminAsset::register($this);
 MyAsset::register($this);
 
