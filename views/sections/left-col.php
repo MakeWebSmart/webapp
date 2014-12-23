@@ -42,7 +42,7 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                                     'linkOptions' => [
                                             'class'=>'active',
                                             'i_class'=>'fa fa-dashboard',
-                                            'i_class_right'=>'fa fa-angle-left pull-right'
+//                                            'i_class_right'=>'fa fa-angle-left pull-right'
                                         ],
                                 ],
                                 [
