@@ -1,23 +1,7 @@
-yii2-simple
-==============
+MakeWebSmart webapp
+===================
 
-A yii2 basic package comes with pre-installed jquery UI, RBAC (mdmsoft/yii2-admin), User profile (dektrium/yii2-user), upload files plugin (mdmsoft/yii2-upload-file) and few more coming to boostup initial development time. 
-
-
-DIRECTORY STRUCTURE
--------------------
-
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+A yii2 basic package comes with pre-installed RBAC (mdmsoft/yii2-admin), User profile (dektrium/yii2-user), upload files plugin (mdmsoft/yii2-upload-file) and AdminLte admin template and few more extended yii2 core classes to boostup initial development time. 
 
 
 REQUIREMENTS
