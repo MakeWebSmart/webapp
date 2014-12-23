@@ -14,3 +14,12 @@ Demo
 
 Check a demo at- 
 http://backendapp.makewebsmart.com/
+
+
+Installation and Doc
+---------------------
+
+This package is similar as `Yii2-Simple` pachage. 
+`Yii2-Simple` guideline is here - http://blog.makewebsmart.com/yii2-simpleapp-with-yii2-admin-user-adminlte-and-few-more/234 
+
+I am still working on adding more functionality on `MakeWebSmart/webapp`. When my working phase finish, then a complete DOC will available for this package also.
