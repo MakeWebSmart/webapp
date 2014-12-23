@@ -1,7 +1,7 @@
 MakeWebSmart webapp
 ===================
 
-A yii2 basic package comes with pre-installed RBAC (mdmsoft/yii2-admin), User profile (dektrium/yii2-user), upload files plugin (mdmsoft/yii2-upload-file) and AdminLte admin template and few more extended yii2 core classes to boostup initial development time. 
+A yii2 basic package with pre-installed RBAC (mdmsoft/yii2-admin), User profile (dektrium/yii2-user),AdminLte admin template and few more extended yii2 core classes to boostup initial development time.
 
 
 REQUIREMENTS
