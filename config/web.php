@@ -74,7 +74,7 @@ $config = [
             'identityClass' => 'dektrium\user\models\User',
         ],
         'wtsecure' => [
-            'class' =>  '@simpleClass\SimpleSecurity',
+            'class' =>  '@azraf/simpleapp/classes/SimpleSecurity',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
