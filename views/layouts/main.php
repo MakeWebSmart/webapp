@@ -45,7 +45,7 @@ $params = [
                     <div class="col-center">
  <?php
             NavBar::begin([
-                'brandLabel' => 'w3nav',
+                'brandLabel' => 'AdminCP',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
