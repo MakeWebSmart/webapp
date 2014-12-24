@@ -1,9 +1,11 @@
-
+<?php
+use yii\helpers\Html;
+?>
         <!-- header logo: style can be found in header.less -->
         <header class="header">
             <a href="<?=$baseUrl;?>" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                AdminLTE
+                AdminCP
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -234,10 +236,10 @@
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        <?= Html::a('Profile', ['/user/settings/profile'], ['class' => 'btn btn-default btn-flat','data-method'=>'post']) ?>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        <?= Html::a('Logout', ['site/logout'], ['class' => 'btn btn-default btn-flat','data-method'=>'post']) ?>
                                     </div>
                                 </li>
                             </ul>
