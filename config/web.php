@@ -72,7 +72,7 @@ $config = [
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false, // If you want to hide `index.php` from URL, make it false and set a .htaccess file
+            'showScriptName' => true, // If you want to hide `index.php` from URL, make it false and set a .htaccess file
             'suffix' => '.html'
         ],
         'errorHandler' => [
