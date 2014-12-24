@@ -13,7 +13,7 @@ use app\models\RegistrationForm;
 
 class DashboardController extends Controller
 {
-    public $testParams;
+    public $layout = 'admin';
     /**
      * @inheritdoc
      */
@@ -49,7 +49,6 @@ class DashboardController extends Controller
     {
         parent::init();
         $this->wtChildPath = DashboardController::className();
-        $this->setLayout('admin');
     }
     
 
