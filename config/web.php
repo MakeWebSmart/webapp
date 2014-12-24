@@ -5,12 +5,6 @@ $mdmAdminPath = 'admin';
 
 $dbPath = __DIR__ . '/db.php';
 
-//if (YII_ENV_DEV) {
-//    $dbPath = __DIR__ . '/db_dev.php';
-//} else {
-//    $dbPath = __DIR__ . '/db.php';
-//}
-
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
@@ -74,11 +68,12 @@ $config = [
             'identityClass' => 'dektrium\user\models\User',
         ],
         'wtsecure' => [
-            'class' =>  '@azraf/simpleapp/classes/SimpleSecurity',
+            'class' =>  'azraf\simpleapp\classes\SimpleSecurity',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => true, // If you want to hide `index.php` from URL, make it false and set a .htaccess file
+            'showScriptName' => false, // If you want to hide `index.php` from URL, make it false and set a .htaccess file
+            'suffix' => '.html'
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -125,6 +120,12 @@ $config = [
 
             ],
         ],
+        'formatter' => [
+            'dateFormat' => 'dd.MM.yyyy',
+            'decimalSeparator' => ',',
+            'thousandSeparator' => ' ',
+            'currencyCode' => 'USD',
+        ],
         'i18n' => [
             'translations' => [
                         '*' => [
@@ -153,6 +154,8 @@ $config = [
             'user/registration/confirm', // add or remove allowed actions to this list
             'user/registration/resend', // add or remove allowed actions to this list
             'user/registration/connect', // add or remove allowed actions to this list
+            'user/settings/profile', // add or remove allowed actions to this list
+            'dashboard/index', // add or remove allowed actions to this list
             
             'site/*',
             ]

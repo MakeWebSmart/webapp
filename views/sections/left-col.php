@@ -10,7 +10,7 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                             <img src="<?=$baseUrl;?>/img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hello, Jane</p>
+                            <p>Hello, <?=$uName;?></p>
 
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
@@ -28,7 +28,6 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     
                     <?php
-                    
 //                        echo Nav::widget([
 //                            'options' => ['class' => 'sidebar-menu'],
 //                            'items' => MenuModel::getItems('admin'),
@@ -42,7 +41,6 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                                     'linkOptions' => [
                                             'class'=>'active',
                                             'i_class'=>'fa fa-dashboard',
-//                                            'i_class_right'=>'fa fa-angle-left pull-right'
                                         ],
                                 ],
                                 [
