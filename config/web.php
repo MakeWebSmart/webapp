@@ -21,6 +21,11 @@ $config = [
             'controllerMap' => [
                 'security' => 'app\controllers\SecurityController',
             ],
+            'components' => [
+                'manager' => [
+                    'profileClass' => 'app\models\Profile',
+                ],
+            ],
             'enableConfirmation' => false,
             'confirmWithin' => 21600,
             'cost' => 12,

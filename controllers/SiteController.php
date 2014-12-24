@@ -12,6 +12,7 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+    public $defaultAction = 'login';
     public function behaviors()
     {
         return [
@@ -61,7 +62,7 @@ class SiteController extends Controller
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
+            return $this->redirect(['/dashboard']);
         }
 
         $model = new LoginForm();
@@ -77,7 +78,7 @@ class SiteController extends Controller
     public function actionSignup()
     {
         if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
+            return $this->redirect(['/dashboard']);
         }
         return $this->redirect(['/user/registration/register']);
     }
