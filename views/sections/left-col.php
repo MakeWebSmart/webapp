@@ -46,7 +46,7 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                                 [
                                     'label' => 'Products',
                                     'tpl'=> 'adminlte',
-                                    'url' => ['product/index'],
+                                    'url' => ['#'],
                                     'options' => ['class' => 'treeview'],
                                     'linkOptions' => [
                                             'i_class'=>'fa fa-dashboard',
