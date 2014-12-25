@@ -1,10 +1,8 @@
 <?php
 
-namespace app\controllers;
+namespace app\controllers\user;
 
-use Yii;
 use dektrium\user\controllers\SecurityController as BaseSecurityController;
-use azraf\simpleapp\classes\SimpleController as Simple;
 
 class SecurityController extends BaseSecurityController
 {
@@ -23,14 +21,6 @@ class SecurityController extends BaseSecurityController
         $model = $this->module->manager->createLoginForm();
 
         if ($model->load(\Yii::$app->getRequest()->post()) && $model->login()) {
-            Yii::$app->view->params['user'] = [
-                                                'loggedIn'=>true,
-                                                Yii::$app->wtsecure->sessionUserInfoTag => [
-                                                    'id'=>Yii::$app->user->identity->id,
-                                                    'username'=>Yii::$app->user->identity->username,
-                                                ],
-                                                Yii::$app->wtsecure->sessionRoleTag => Yii::$app->wtsecure->encryptRoles($roles=[],$userInfo=[])
-                                            ];
             return $this->goBack();
         }
 
@@ -46,9 +36,8 @@ class SecurityController extends BaseSecurityController
      */
     public function actionLogout()
     {
-        Simple::setNull();
         \Yii::$app->getUser()->logout();
-
+        
         return $this->goHome();
     }
 }

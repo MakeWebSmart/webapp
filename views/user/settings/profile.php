@@ -21,8 +21,19 @@ $this->title = Yii::t('user', 'Profile settings');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<?= $this->render('/_alert') ?>
-
+<?php //= $this->render('/_alert') ?>
+<?php 
+if(empty( \Yii::$app->session->get('user.name'))):
+?>
+    <div class="alert alert-warning">
+        <h4>
+            <?= \Yii::t('user', 'Please fillup your `NAME` and `LOCATION` correctly.') ?>
+        </h4>
+        <p>
+            <?= \Yii::t('user', 'After filling up your name and location, you may proceed to Dashboard') ?>.
+        </p>
+    </div>
+<?php endif ?>
 <div class="row">
     <div class="col-md-3">
         <?= $this->render('_menu') ?>

@@ -13,7 +13,8 @@ $config = [
         'user' => [
             'class' => 'dektrium\user\Module',
             'controllerMap' => [
-                'security' => 'app\controllers\SecurityController',
+                'security' => 'app\controllers\user\SecurityController',
+                'settings' => 'app\controllers\user\SettingsController',
             ],
             'components' => [
                 'manager' => [
