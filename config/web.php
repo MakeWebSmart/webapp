@@ -74,7 +74,7 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => true, // If you want to hide `index.php` from URL, make it false and set a .htaccess file
-            'suffix' => '.html'
+//          'suffix' => '.html'
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -156,7 +156,8 @@ $config = [
             'user/registration/resend', // add or remove allowed actions to this list
             'user/registration/connect', // add or remove allowed actions to this list
             'user/settings/profile', // add or remove allowed actions to this list
-            'dashboard/index', // add or remove allowed actions to this list
+            
+			'dashboard/*', // add or remove allowed actions to this list
             
             'site/*',
             ]
