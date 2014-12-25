@@ -10,6 +10,8 @@ use yii\filters\AccessControl;
 use mdm\admin\models\searchs\AuthItem as AuthItemSearch;
 use yii\rbac\Item;
 use app\models\RegistrationForm;
+use app\models\ContactForm;
+
 
 class DashboardController extends Controller
 {
@@ -70,7 +72,26 @@ class DashboardController extends Controller
 
     public function actionIndex()
     {
+        return $this->wtRender('index');
+    }
+    
+    public function actionAbout()
+    {
         return $this->wtRender('empty');
+    }
+    
+    public function actionContact()
+    {
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
+
+            return $this->refresh();
+        } else {
+            return $this->render('contact', [
+                'model' => $model,
+            ]);
+        }
     }
     
     public function actionFull()

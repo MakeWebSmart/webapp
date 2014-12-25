@@ -3,8 +3,6 @@
 $this->title = 'My Yii Application';
 $url = new yii\helpers\Url();
 ?>
-<?= $this->render('parts/sliderbox') ?>
-<?= $this->render('/site/parts/quiz-modal-web') ?>
 <div class="row">
     <div class="col-lg-12">
             <div class="row">

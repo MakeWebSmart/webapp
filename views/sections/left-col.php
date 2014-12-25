@@ -37,7 +37,7 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                             'items' => [
                                 [
                                     'label' => 'Home',
-                                    'url' => ['site/index'],
+                                    'url' => ['/dashboard'],
                                     'linkOptions' => [
                                             'class'=>'active',
                                             'i_class'=>'fa fa-dashboard',
@@ -54,8 +54,8 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                                         ],
                                     'items' => [
 //                                        'options' => ['class' => 'treeview-menu'],
-                                        ['label' => 'New Arrivals', 'url' => ['site/about']],
-                                        ['label' => 'Most Popular', 'url' => ['site/contact']],
+                                        ['label' => 'New Arrivals', 'url' => ['dashboard/about']],
+                                        ['label' => 'Most Popular', 'url' => ['dashboard/contact']],
                                     ]
                                 ],
                                 [
