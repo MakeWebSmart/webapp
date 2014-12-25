@@ -28,6 +28,10 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="panel-heading">
                 <h3 class="panel-title"><?= Html::encode($this->title) ?></h3>
             </div>
+			<div class="alert alert-info">
+                <h3 class="panel-title">All demo data at "http://backendapp.makewebsmart.com/" are reloaded every hour.</h3>
+				<h3 class="panel-title">Please Sign-up first.it DO NOT require any valid email address.</h3>
+            </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
                     'id' => 'login-form',
