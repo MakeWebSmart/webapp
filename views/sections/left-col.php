@@ -74,7 +74,7 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                 </section>
                 <!-- /.sidebar -->
             </aside>
-			<?php
+<?php
 $this->registerJs("if($('.treeview .active').length > 0) {
 $('.treeview .active').closest('.treeview').children('a').click();
 }");
