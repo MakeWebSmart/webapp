@@ -59,6 +59,36 @@ use azraf\simpleapp\classes\SimpleNav as Nav;
                                     ]
                                 ],
                                 [
+                                    'label' => 'Service',
+                                    'tpl'=> 'adminlte',
+                                    'url' => ['#'],
+                                    'options' => ['class' => 'treeview'],
+                                    'linkOptions' => [
+                                            'i_class'=>'fa fa-dashboard',
+//                                            'i_class_right'=>'fa pull-right fa-angle-left'
+                                        ],
+                                    'items' => [
+//                                        'options' => ['class' => 'treeview-menu'],
+                                        ['label' => 'New Arrivals', 'url' => ['dashboard/about2']],
+                                        ['label' => 'Most Popular', 'url' => ['dashboard/contact2']],
+                                    ]
+                                ],
+                                [
+                                    'label' => 'Support',
+                                    'tpl'=> 'adminlte',
+                                    'url' => ['#'],
+                                    'options' => ['class' => 'treeview'],
+                                    'linkOptions' => [
+                                            'i_class'=>'fa fa-dashboard',
+//                                            'i_class_right'=>'fa pull-right fa-angle-left'
+                                        ],
+                                    'items' => [
+//                                        'options' => ['class' => 'treeview-menu'],
+                                        ['label' => 'New Arrivals', 'url' => ['dashboard/about3']],
+                                        ['label' => 'Most Popular', 'url' => ['dashboard/contact3']],
+                                    ]
+                                ],
+                                [
                                     'label' => 'Dropdown',
                                     'items' => [
                                          ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
